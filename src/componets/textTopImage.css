@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.text-top-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    font-family: Gotham Ultra, sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.vacancies-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #407e15;
+    font-family: Gotham Ultra, sans-serif;
+    font-weight: 800;
+    font-size: large;
+    width: 200px;
+    height: 50px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 4px solid white;
+    transition: all 0.1s ease-in-out;
+}
+
+.vacancies-Button:hover {
+    background-color: transparent;
+    color: white;
+}

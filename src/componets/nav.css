@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background-color: transparent;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navB {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    background-color: white;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: Gotham Ultra, sans-serif;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: large;
+  }
+  .right-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-right: 300px;
+    height: 100%;
+  }
+.logo {
+    display: flex;
+    font-family: Gotham Ultra, sans-serif;
+    background-color: #002e3d;
+    color: #94f55f;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: x-large;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.separator {
+    height: 62px;
+    border-left-width: 1px;
+    border-left-style: dotted;
+    border-left-color: white;
+  }
+  .separatorB {
+    height: 62px;
+    border-left-width: 1px;
+    border-left-style: dotted;
+    border-left-color: black;
+  }
+  .nav-item {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 62px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+    color: white;
+  }
+  .nav-item:hover {
+    border-bottom: 1px solid white;
+    animation:  grow 0.2s ease-in-out forwards;
+  }
+  .nav-itemB {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 62px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+    color: black;
+  }
+
+  .nav-itemB:hover {
+    color: #59913b;
+    animation: all 0.2s ease-in-out forwards;
+  }
+
+
+  @keyframes grow {
+    from {
+        border-bottom: 1px solid white;
+    }
+    to {
+        border-bottom: 4px solid white;
+    }
+  }
