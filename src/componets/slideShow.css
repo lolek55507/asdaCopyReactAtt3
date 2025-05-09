@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideshow-Main-Container {
+    height: 500px;
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.cardImage {
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #000;
+    filter: brightness(1.2);
+}
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    transform: translateX(-58%);
+    position: relative;
+    animation: sliedan 2s ease-in-out;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    gap: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+}
+.directionButton {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    width: 200px;
+    border: 4px solid #000;
+}
+.directionButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+.c-title {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        2px 2px 4px #000,
+        -2px 2px 4px #000,
+        2px -2px 4px #000,
+        -2px -2px 4px #000,
+        0px 0px 10px #000;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
