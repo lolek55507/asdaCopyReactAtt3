@@ -5,7 +5,8 @@ import TopImage from './componets/topImage'
 import TextTopImage from './componets/textTopImage'
 import Searchbox from './componets/searchbox'
 import SlideShow from './componets/slideShow'
-
+import StrawberrySection from './componets/strawberrySection'
+import Footer from './componets/footer'
 
 
 const cardsArray = [
@@ -34,7 +35,6 @@ const cardsArray = [
       class: "default"
   },
 ]
-
 
 function App() {
   const [scrollPercent, setScrollPercent] = useState(0);
@@ -65,6 +65,8 @@ function App() {
       <TextTopImage />
       <Searchbox />
       <SlideShow cardsArray={cardsArray} />
+      <StrawberrySection />
+      <Footer />
     </div>
   )
 }
